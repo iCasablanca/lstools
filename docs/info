@@ -1,0 +1,89 @@
+Some of the unit capabilities can be controlled or detected from hooks 
+in the /proc/gpio filesystem.
+
+
+SWITCHES
+========
+
+/proc/buffalo/gpio/switch/auto_power	(RO)
+	on:	power switch is in "auto" position
+	off:	power switch not in "auto" position
+
+/proc/buffalo/gpio/switch/power		(RO)
+	on:	power switch is in "on" position
+	off:	power switch not in "on" position
+
+/proc/buffalo/gpio/switch/func		(RO)
+	on: 	function button is pressed
+	off:	function button is released
+
+
+FAN
+===
+
+/proc/buffalo/gpio/fan/control		(RW)
+	full	Full speed fan
+	fast	Fast spinning fan
+	slow	Slow spinning fan
+	stop	Fan turned off
+
+
+LEDS
+====
+
+The unit has two LEDs, one on the top ("power led") and one on the
+function button ("function led"). LEDs can be off, on or blinking.
+
+/proc/buffalo/gpio/led/alarm 		(RW)
+	on: 	power led, red led fixed
+	off: 	power led, red led off fixed
+
+/proc/buffalo/gpio/led/alarm_blink 	(RW)  
+	on: 	power led, red led blinking
+	off: 	power led, red led off blinking
+
+/proc/buffalo/gpio/led/info          	(RW)
+	on: 	power led, orange led fixed
+	off: 	power led, orange led off fixed
+
+/proc/buffalo/gpio/led/info_blink    	(RW)
+	on: 	power led, orange led blinking
+	off: 	power led, orange led off blinking
+
+/proc/buffalo/gpio/led/power         	(RW)
+	on: 	power led, blue led fixed
+		(default when the unit is operational)
+	off: 	power led, blue led off fixed
+		(default during boot and shutdown)
+
+/proc/buffalo/gpio/led/power_blink 	(RW)
+	on: 	power led, blue led blinking
+	off: 	power led, blue led off blinking
+
+/proc/buffalo/gpio/led/func          	(RW)
+	on: 	function led, blue led fixed
+	off: 	function led, blue led off fixed
+
+/proc/buffalo/gpio/led/func_blink    	(RW)
+	on: 	function led, blue led blinking
+	off: 	function led, blue led off blinking
+
+/proc/buffalo/gpio/led/func2         	(RW)
+	on: 	function led, red led fixed
+	off: 	function led, red led off fixed
+
+/proc/buffalo/gpio/led/func2_blink   	(RW)
+	on: 	function led, red led blinking
+	off: 	function led, red led off blinking
+
+
+POWER CONTROL
+=============
+
+/proc/buffalo/gpio/power_control/usb0
+	on	USB interface powered on
+	off	USB interface powered off
+
+/proc/buffalo/gpio/power_control/hdd0
+	on	Hard Disk powered on
+	off	Hard Disk powered off

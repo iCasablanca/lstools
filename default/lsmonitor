@@ -1,0 +1,6 @@
+# Default settings for lsmonitor
+
+# HDD temperature thresholds
+HDDTEMP0=40
+HDDTEMP1=45
+HDDTEMP2=50
