@@ -49,13 +49,28 @@
 PIDFILE=/var/run/lsmonitor_daemon.pid
 
 # GPIO's for LS-WXL
-GPIO_PWR_SW=42		# Power switch (power switch)
-GPIO_AUT_SW=43		# Auto-Power switch (auto switch)
-GPIO_FAN_STAT=40	# Fan low speed enable (fan lock)
-GPIO_FAN_LO=48		# Fan low speed enable (fan low)
-GPIO_FAN_HI=47		# Fan high speed enable (fan high)
-GPIO_LED_POWER=39	# Power Led Status Control (led power)
-GPIO_LED_INFO=38	# Info Led Status Control (led info)
+GPIO_PWR_SW=42			# Power switch (power switch)
+GPIO_AUT_SW=43			# Auto-Power switch (auto switch)
+GPIO_FAN_STAT=40		# Fan low speed enable (fan lock)
+GPIO_FAN_LO=48			# Fan low speed enable (fan low)
+GPIO_FAN_HI=47			# Fan high speed enable (fan high)
+
+GPIO_POWER_HDD0=28		# (pmx-power-hdd0)
+GPIO_POWER_HDD1=29		# (pmx-power-hdd1)
+GPIO_USB_VBUS=37		# (pmx-usb-vbus)
+GPIO_FAN_LOCK=40		# (pmx-fan-lock)
+GPIO_FAN_HIGH=47		# (pmx-fan-high)
+GPIO_FAN_LOW=48			# (pmx-fan-low)
+GPIO_LED_HDDERR0=8		# (pmx-led-hdderr0)
+GPIO_LED_HDDERR1=46		# (pmx-led-hdderr1)
+GPIO_LED_ALARM=49		# (pmx-led-alarm)
+GPIO_LED_FUNC_RED=34	# (pmx-led-func_red)
+GPIO_LED_FUNC_BLUE=36	# (pmx-led-func_blue)
+GPIO_LED_INFO=38		# (pmx-led-info)
+GPIO_LED_POWER=39		# (pmx-led-power)
+GPIO_BTN_FUNC=41		# (pmx-btn-func)
+GPIO_POWER_SW=42		# (pmx-power-sw)
+GPIO_POWER_AUTOSW=43	# (pmx-power-autosw)
 
 gpio_config()
 {
